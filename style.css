@@ -5,7 +5,6 @@
 }
 body{
     width: 1200px;
-    height: 200vh;
     display: flex;
     flex-direction: column;
 }
@@ -51,14 +50,10 @@ fieldset.fieldset_contact,fieldset.fieldset_logiciel,fieldset.fieldset_language 
 }
 .group_fieldset_logiciel{
     display: flex;
-    /* align-items: center; */
     justify-content: center;
-    /* flex-direction: column; */
-    height: 400px;
     width: 70%;
     flex-wrap: wrap;
     margin: 0 auto;
-    
 }
 .group_fieldset_language{
     height: 200px;
@@ -75,6 +70,7 @@ fieldset.fieldset_contact,fieldset.fieldset_logiciel,fieldset.fieldset_language 
     text-align: center;
 }
 .container_img {
+  
     height: 250px;
     width: 250px;
 background-image: url(./img/115386.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg);
@@ -83,6 +79,50 @@ background-size: 250px 250px;
 
 main{
     width: 70%;
+}
+.group_logiciel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+.svg_html{
+    position: relative;
+}
+.porcent_html{
+    position: absolute;
+        /* top: 99%; */
+        /* left: 28%; */
+        font-size: 1.3em;
+        color: wheat;
+        transform: translate(17%, 34%);
+  
+    
+}
+.circle {
+    fill: none;
+    stroke-dasharray: 251;
+    stroke-width: 7px;
+    animation: porcentage 7s forwards;
+    z-index: 5;
+}
+.bg_circle {
+    fill: none;
+    stroke-dasharray: 251;
+    stroke-width: 7px;
+    stroke: white;
+    opacity: 0.2;
+
+
+
+}
+@keyframes porcentage {
+    0%{
+        stroke-dasharray: 251;
+    }
+    100%{
+        stroke-dasharray: 120;
+    }
 }
 footer{
     color: white;
