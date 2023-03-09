@@ -7,6 +7,7 @@ body{
     width: 1200px;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
 }
 header{
     display: flex;
@@ -25,7 +26,11 @@ section{
 
     height: 100%;
     width: 100%;
-    background: yellow;
+    /* background: yellow; */
+}
+/* ==================================aside====================================== */
+.fontSize{
+    font-size: 1.3em;
 }
 aside{
     display: flex;
@@ -34,26 +39,59 @@ aside{
     align-items: center;
     /* align-items: end; */
    width: 30%;
-   background: #003d73;
+   background: #003d730d;
    /* order: 1;  */
 }
-fieldset.fieldset_contact,fieldset.fieldset_logiciel,fieldset.fieldset_language {
-    width: 70%;
+/* =================================PHOTO ASIDE ================================== */
+.container_img {
+    position: relative;
+    top: 26px;
+    height: 270px;
+    width: 270px;
+    background-image: url(./img/115386.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg);
+    background-size: 270px 270px;
+    /* border-radius: 5px; */
+    margin-bottom: 69px;
 }
-
+/* ===================================================================================== */
+fieldset.fieldset_contact,fieldset.fieldset_logiciel,fieldset.fieldset_language,.fieldset_entreprise {
+    width: 70%;
+    margin-bottom: 70px;
+   
+}
+/* ==============================ASIDE CONTACT================================= */
+.title_aside_contact{
+   
+    height: 50px;
+}
 .group_fieldset_contact {
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     height: 177px;
     width: 100%;
     flex-wrap: wrap;
 }
+span.phone ,span.email,.group_town_countrie {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+i{
+    margin-right: 15px;
+}
+
+/* ===========================ASIDE LOGICIEL============================== */
+.title_aside_logiciel{
+    text-align: center;
+    /* margin-bottom: 24px; */
+    height: 50px;
+}
 .group_fieldset_logiciel{
     display: flex;
-    justify-content: center;
-    width: 70%;
-    flex-wrap: wrap;
-    margin: 0 auto;
+        justify-content: center;
+        width: 27%;
+        flex-wrap: wrap;
+        margin: 0 auto;
 }
 .group_fieldset_language{
     height: 200px;
@@ -61,60 +99,169 @@ fieldset.fieldset_contact,fieldset.fieldset_logiciel,fieldset.fieldset_language 
     
 }
 .bar_french{
-    border: 1px solid white;
-    background: white;
-    height: 10px;
+    background: grey;
     width: 100px;
+    height: 20px;
 }
-.title_aside_logiciel{
+/* =======================ASIDE ENTREPRISE============================== */
+.group_fieldset_entreprise{
+    display: flex;
+    justify-content: center;
+}
+input{
+    margin: 15px;
+    height: 20px;
+    border:1px solid #c05e2d;
+    border-radius: 5px;
+    background: rgb(242, 240, 240);
+    
+}
+textarea{
+    width: 98%;
+    border: 1px solid #c05e2d;
+    margin-top: 21px;
+}
+.button_form{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 37px;
+    width: 171px;
+    height: 37px;
+    background: #c05e2d;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+}
+/* ===============================ASIDE LANGUES================================ */
+.title_aside_language{
     text-align: center;
+    margin:15px 0px 40px 0px ;
 }
-.container_img {
-  
-    height: 250px;
-    width: 250px;
-background-image: url(./img/115386.jpg-c_310_420_x-f_jpg-q_x-xxyxx.jpg);
-background-size: 250px 250px;
+.french , .anglais{
+    margin-bottom:30px ;
+}
+.bar_french{
+    /* border: 1px solid white; */
+    background: rgba(128, 128, 128, 0.397);
+    height: 10px;
+    width: 80%;
+    border-radius: 20px;
+}
+.french_progress_bar{
+    /* border: 1px solid white; */
+    background: #c05e2d;
+    height: 100%;
+    width: 0px;
+    border-radius: 20px;
+    animation:progress 5s forwards ;
+}
+@keyframes progress {
+    0%{
+        width: 0px;
+        
+    }
+    100%{
+        
+        width: 150px;
+    }
+}
+.bar_anglais{
+    /* border: 1px solid white; */
+    background: rgba(128, 128, 128, 0.397);
+    height: 10px;
+    width: 80%;
+    border-radius: 20px;
+}
+.anglais_progress_bar{
+    /* border: 1px solid white; */
+    background: #c05e2d;
+    height: 100%;
+    width: 0px;
+    border-radius: 20px;
+    animation:progress 5s forwards ;
+}
+@keyframes progress {
+    0%{
+        width: 0px;
+        
+    }
+    100%{
+        
+        width: 150px;
+    }
 }
 
+/* =============================================================================== */
+
+/* ====================================MAIN==================================== */
 main{
+    display: flex;
+    flex-direction: column;
     width: 70%;
+    background: #e3f4f99e;
 }
+.main_tiltle{
+    height: 40px;
+    font-size: 1.5em;
+
+}
+.name_lastName{
+    display: flex;
+    justify-content: center;
+    color: #c05e2d;
+    font-size: 2em;
+    margin: 20px 0px 7px 0px;
+}
+.sous-title{
+    margin: 20px 0px 129px 0px;
+    font-size: 1.4em;
+}
+section.container_paragraf.height {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid; */
+    width: 89%;
+    margin: 0 auto;
+    padding: 15px;
+}
+.tiltle_section_main{
+    color: #c05e2d;
+ 
+}
+/* ============================================================================== */
 .group_logiciel {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-} 
+}
 .svg_html{
     position: relative;
 }
 .porcent_html{
     position: absolute;
-        /* top: 99%; */
-        /* left: 28%; */
-        font-size: 1.3em;
-        color: wheat;
-        transform: translate(17%, 34%);
-  
-    
+    font-size: 1.3em;
+    color: wheat;
+    transform: translate(27%, 46%);  
+}
+fieldset{
+    border:1px solid #c05e2d;
+    padding: 8px;
 }
 .circle {
     fill: none;
     stroke-dasharray: 251;
-    stroke-width: 7px;
+    stroke-width: 9px;
     animation: porcentage 7s forwards;
     z-index: 5;
 }
 .bg_circle {
     fill: none;
     stroke-dasharray: 251;
-    stroke-width: 7px;
-    stroke: white;
+    stroke-width: 9px;
+    stroke: #565656;
     opacity: 0.2;
-
-
-
 }
 @keyframes porcentage {
     0%{
@@ -124,12 +271,41 @@ main{
         stroke-dasharray: 120;
     }
 }
-footer{
+/* ============================FOOTER=================================== */
+/* footer{
     color: white;
     height: 502px;
     width: 100%;
     background: black;
-}
+} */
+/* ====================================================================== */
 .group_label_input{
     width: 200px;
+}
+
+.border_line{
+            /* margin-top: 15px; */
+            margin: 0 auto;
+            width: 80px;
+            border-bottom: 4px solid #c05e2d;
+            animation:lane_progress 10s forwards;
+        }
+        @keyframes lane_progress {
+            0%{
+        width: 80px;
+
+            }
+            100%{
+        width: 90%;
+
+            }
+}
+.p_color{
+    color: red;
+}
+.center{
+    text-align: center;
+}
+.height{
+   height:  400px;
 }
