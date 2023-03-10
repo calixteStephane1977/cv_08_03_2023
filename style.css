@@ -3,8 +3,15 @@
     padding: 0;
 
 }
+i{
+        display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
 body{
-    width: 1200px;
+    /* width: 1200px; */
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -28,6 +35,12 @@ section{
     width: 100%;
     /* background: yellow; */
 }
+@media (max-width:780px) {
+    section{
+        flex-direction: column;
+        width: 100%;
+    }
+}
 /* ==================================aside====================================== */
 .fontSize{
     font-size: 1.3em;
@@ -38,9 +51,15 @@ aside{
     /* justify-content: center; */
     align-items: center;
     /* align-items: end; */
-   width: 30%;
-   background: #003d730d;
-   /* order: 1;  */
+    width: 30%;
+    background: #003d730d;
+    /* order: 1;  */
+}
+@media (max-width:780px) {
+    aside{
+    
+        width: 100%;
+    }
 }
 /* =================================PHOTO ASIDE ================================== */
 .container_img {
@@ -103,6 +122,27 @@ i{
     width: 100px;
     height: 20px;
 }
+.techno {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.techno i {
+    margin: 0 auto;
+    animation: clignotte 6s ease-in-out infinite;
+}
+@keyframes clignotte {
+    0%{
+       opacity: 0; 
+    }
+    100%{
+        opacity: 1; 
+
+    }
+}
+
 /* =======================ASIDE ENTREPRISE============================== */
 .group_fieldset_entreprise{
     display: flex;
@@ -133,13 +173,25 @@ textarea{
     font-size: 1.2em;
     border: none;
 }
+
+
 /* ===============================ASIDE LANGUES================================ */
 .title_aside_language{
     text-align: center;
     margin:15px 0px 40px 0px ;
 }
 .french , .anglais{
+ 
     margin-bottom:30px ;
+}
+.flag {
+    display: flex;
+    align-items: center;
+    
+}
+.flag i{
+font-size: 14px;
+
 }
 .bar_french{
     /* border: 1px solid white; */
@@ -201,10 +253,18 @@ main{
     width: 70%;
     background: #e3f4f99e;
 }
-.main_tiltle{
-    height: 40px;
-    font-size: 1.5em;
+@media (max-width:780px) {
+    main {
 
+        width: 100%;
+    }
+}
+p{
+    opacity: 1;
+    animation:opacity_up 8s forwards ;
+}
+.main_tiltle{
+    font-size: 1.5em;
 }
 .name_lastName{
     display: flex;
@@ -212,6 +272,9 @@ main{
     color: #c05e2d;
     font-size: 2em;
     margin: 20px 0px 7px 0px;
+}
+.main_name{
+    margin-right:20px ;
 }
 .sous-title{
     margin: 20px 0px 129px 0px;
@@ -224,11 +287,60 @@ section.container_paragraf.height {
     width: 89%;
     margin: 0 auto;
     padding: 15px;
+    opacity: 0;
+    animation:opacity_up 5s forwards ;
+}
+@keyframes opacity_up {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+
+    }
 }
 .tiltle_section_main{
     color: #c05e2d;
+    
  
 }
+.arrow_right {
+    display: flex;
+    margin-bottom: 17px;
+}
+.group_main_i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+}
+@media (max-width:880px) {
+    
+}
+/* =============================QUALITE INTERET======================== */
+.quality_interets{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.quality,.interet{                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+    width: 50%;
+    margin-bottom: 80px;
+}
+.dote{
+    display: flex;
+}
+@media (max-width:1130px) {
+    .quality_interets{
+        flex-direction: column;
+    }
+    .quality,.interet{
+        
+        width: 100%;
+    }
+    
+}
+
 /* ============================================================================== */
 .group_logiciel {
     display: flex;
@@ -286,13 +398,13 @@ fieldset{
 .border_line{
             /* margin-top: 15px; */
             margin: 0 auto;
-            width: 80px;
+            width: 350px;
             border-bottom: 4px solid #c05e2d;
-            animation:lane_progress 10s forwards;
+            animation:lane_progress 6s forwards;
         }
         @keyframes lane_progress {
             0%{
-        width: 80px;
+        width: 350px;
 
             }
             100%{
@@ -306,6 +418,9 @@ fieldset{
 .center{
     text-align: center;
 }
-.height{
+/* .height{
    height:  400px;
+} */
+.group_container_section{
+    margin-bottom: 25px;
 }
