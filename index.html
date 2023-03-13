@@ -6,41 +6,48 @@
     <link rel="stylesheet" href="./style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Apprenant en développement Web et webmobile à la recherche d'un stage" >
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Cv</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+
+
+
   </head>
   <body>
     <!-- <header>
         HEADER
        
     </header> -->
-    <section class="container">
+    <section id="haut_de_page" class="container">
       <aside>
-        <div class="container_img"></div>
+        <div class="container_img_fieldset_contact">
+          <div class="container_img"></div>
+  
+          <fieldset class="fieldset_contact">
+            <h5 class="title_aside_contact center fontSize">Contact</h5>
+            <div class="group_fieldset_contact">
+              <span class="phone">
+                <i class="fa-solid fa-phone"></i>
+                <p  >07-58-96-84-07</p>
+              </span>
+              <span class="email">
+                <i class="fa-solid fa-envelope"></i>
+                <p>calixtedeveloppeur@gmail.com</p>
+              </span>
+              <span class="group_town_countrie">
+                <i class="fa-sharp fa-solid fa-location-dot"></i>
+                <p>Cergy,France</p>
+              </span>
+            </div>
+          </fieldset>
 
-        <fieldset class="fieldset_contact">
-          <h5 class="title_aside_contact center fontSize">Contact</h5>
-          <div class="group_fieldset_contact">
-            <span class="phone">
-              <i class="fa-solid fa-phone"></i>
-              <p>07-58-96-84-07</p>
-            </span>
-            <span class="email">
-              <i class="fa-solid fa-envelope"></i>
-              <p>calixtedeveloppeur@gmail.com</p>
-            </span>
-            <span class="group_town_countrie">
-              <i class="fa-sharp fa-solid fa-location-dot"></i>
-              <p>Cergy,France</p>
-            </span>
-          </div>
-        </fieldset>
+        </div>
         <fieldset class="fieldset_logiciel">
           <h5 class="title_aside_logiciel fontSize">Logiciels</h5>
           <div class="group_fieldset_logiciel">
@@ -259,7 +266,7 @@
             </div>
           </div>
         </fieldset>
-        <fieldset class="fieldset_entreprise">
+        <fieldset id="contact" class="fieldset_entreprise">
           <h1 class="center fontSize" >Recherche d'un stage</h1>
           <h5 class="title_aside_language fontSize">
             <i class="fa-solid fa-handshake"></i>
@@ -323,119 +330,337 @@
           </div>
         </fieldset>
       </aside>
+      <!-- =============================================MAIN====================================== -->
       <main>
-        <div class="name_lastName">
-          <h2 class="main_name">Calixte</h2>
-          <h2 class="main_last_name">Stephane</h2>
+        <div class="group_name_lastName_soustitle">
+          <div class="name_lastName">
+            <h2 class="main_name">Calixte</h2>
+            <h2 class="main_last_name">Stephane</h2>
+          </div>
+          <h1  class="sous-title center">Développeur web et web mobile full-stack</h1>
+
         </div>
-        <h1 class="sous-title center">Développeur web et web mobile full-stack</h1>
-        <p class="profil border_line center main_tiltle">Compétences</p>
+         <div class="group_main_i">
+           <h3 class="profil  center main_tiltle">Compétences</h3>
+
+         </div>
+        <p class="profil border_line center main_tiltle"></p>
         <section class="container_paragraf height">
           <h3 class="tiltle_section_main" >
             COMPETENCES FONCTIONNELLES:
           </h3> 
-          <div class="arrow_right">
+          <div class="group_arrow_right">
             <i class="fa-solid fa-angle-right"></i>
             <p>Capacité de faire un site web</p>
           </div>
-          <div class="arrow_right">
+          <div class="group_arrow_right">
             <i class="fa-solid fa-angle-right"></i>
             <p>Language de progammation :HTML,CSS,SASS</p>
           </div>
-          <div class="arrow_right">
+          <div class="group_arrow_right">
             <i class="fa-solid fa-angle-right"></i>
             <p>Language de progammation :JAVASCRIPT,NODE-JS,REACT-JS,PHP</p>
           </div>
-          <div class="arrow_right">
+          <div class="group_arrow_right">
             <i class="fa-solid fa-angle-right"></i>
             <p>Notions en PYTHON,C#,REACT-JS</p>
           </div>
         </section>
         <div class="group_main_i">
           <i class="fa-sharp fa-solid fa-user-tie"></i>
-          <p class="experience center main_tiltle">
+          <h3 class="experience center main_tiltle">
             Expérience Professionnelle
-          </p>
+          </h3>
         </div>
         <p class="experience border_line center main_tiltle"></p>
         <section class="container_paragraf height">
           <div class="group_container_section">
 
 
-            <h3 class="tiltle_section_main">DEVELOPPEUR WEB ET WebMobile</h3>
-            <p class="main_dates">06/02/2023 au 20/07/2023</p>
-            <p>Aprenant chez INSY2S</p>
+            <h3 class="tiltle_section_main">Développeur Web ET WebMobile</h3>
+            <div class="main_dates">
+              <i class="fa-regular fa-calendar-days"></i>
+              <p class="date" >06/02/2023 au 20/07/2023</p>
+            </div>
+            <div class="dote">
+              <i class="fa-regular fa-circle"></i>
+              <p>Aprenant chez INSY2S</p>
+              
+             </div>
           </div>
             <div class="group_container_section">
 
-              <h3 class="tiltle_section_main">DEVELOPPEUR WEB FULL STACK</h3>
-              <p class="main_dates">26/09/2020 au 26/03/2021</p>
-              <p>Aprenant chez Openclassrooms :</p>
+              <h3 class="tiltle_section_main">Développeur Web full Stack</h3>
+              <div class="main_dates">
+                <i class="fa-regular fa-calendar-days"></i>
+                <p class="date" >26/09/2020 au 26/03/2021</p>
+                
+              </div>
+              <div class="dote">
+                <i class="fa-regular fa-circle"></i>
+                <p>Aprenant chez Openclassrooms :</p>
+              </div>
+              
 
           </div>
             <div class="group_container_section">
 
               <h3 class="tiltle_section_main">MANPOWER </h3>
-              <p>juin, 2019</p>
-              <p>Préparateur de commande  Pontoise ,France</p>
+              
+              <div class="main_dates">
+                <i class="fa-regular fa-calendar-days"></i>
+                <p class="date" >juin, 2019</p>
+              </div>
+              <div class="dote">
+                <i class="fa-regular fa-circle"></i>
+                <p>Préparateur de commande  Pontoise ,France</p>
+
+              </div>
 
           </div>
             <div class="group_container_section">
-
               <h3 class="tiltle_section_main">Espérer 95</h3>
-              <p>12/2008 au 04/2017</p>
-              <p>Veilleur Social dans un centre d'hébergement pour sdf</p>
-              <p>Pontoise,France</p>
-              <p>Surveillant de nuit tilt service</p>
+              <div class="main_dates">
+                <i class="fa-regular fa-calendar-days"></i>
+                <p class="date" >12/2008 au 04/2017</p>
+              </div>
+              <div class="dote">
+                <i class="fa-regular fa-circle"></i>
+                <p>Veilleur Social dans un centre d'hébergement pour sdf</p>
 
-          </div>
+              </div>
+              <div class="dote">
+                <i class="fa-regular fa-circle"></i>
+                <p>Pontoise,France</p>
+
+              </div>
+              <div class="dote">
+                <i class="fa-regular fa-circle"></i>
+                <p>Surveillant de nuit tilt service</p>
+
+              </div>
+              
+            </div>
+        
             <div class="group_container_section">
+              
+              <h3 class="tiltle_section_main" >MISSION INTÉRIM _VEDIORBIS ,MANPOWER, SELPRO , GEODIS,CEPL</h3>
+              <div class="main_dates">
+                <i class="fa-regular fa-calendar-days"></i>
+                <p class="date" >12/2005-01/2007:</p> 
+                
+              </div>
+              <div class="dote">
+                <i class="fa-regular fa-circle"></i>
+                <p>PRÉPARATEUR DE COMMANDE</p> 
 
-              <h3 class="tiltle_section_main">KALIXT PROTECTION</h3>
-              <p>13/01/2002</p>
-              <p>Société de sécuritée des biens et des locaux</p>
-              <p>En qualité de Gérant </p>
-              <p>18 rue du haut lieu (Cergy,95800)</p>
+              </div>
+  
+            </div>
+             
+            <div class="group_container_section">
+              <h3 class="tiltle_section_main" >RENAULT ERANY (95)</h3> 
+              <div class="main_dates">
+                <i class="fa-regular fa-calendar-days"></i>
+                <p class="date" >09/2005-12/2005: </p>
 
-          </div>
-        </section>
-        <div class="group_main_i">
+              </div>
+              <div class="dote">
+                <i class="fa-regular fa-circle"></i>
+                <p>PRÉPARATEUR DE COMMANDE</p> 
+
+              </div>
+                </div>
+
+                <div class="group_container_section">
+                  <h3 class="tiltle_section_main" >STÉ DÉVELOPPEMENT</h3>
+                  <div class="main_dates">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <p class="date" >04/2005-06/2005:</p>  
+
+                  </div>
+                  <div class="dote">
+                    <i class="fa-regular fa-circle"></i>
+                    <p>Agent de sécurité</p>
+
+                  </div>
+                </div >
+                
+                <div class="group_container_section">
+                  <h3 class="tiltle_section_main">KALIXT PROTECTION(95)</h3>
+                  <div class="main_dates">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <p class="date" >12/2001-12/2005:</p> 
+
+                  </div>
+                  <div class="dote">
+                    <i class="fa-regular fa-circle"></i>
+                    <p>Société de sécuritée des biens et des locaux</p>
+
+                  </div>
+                  <div class="dote">
+                    <i class="fa-regular fa-circle"></i>
+                    <p>En qualité de Gérant </p>
+
+                  </div>
+                  <div class="dote">
+                    <i class="fa-regular fa-circle"></i>
+                    <p>18 rue du haut lieu (Cergy,95800)</p>
+
+                  </div>
+                </div>
+                
+                
+                <div class="group_container_section">
+                  <h3 class="tiltle_section_main" >PEUGEOT (CERGY)</h3>
+                  <div class="main_dates">
+                    <i class="fa-regular fa-calendar-days"></i>  
+                    <p class="date" >07/2000-10/2002 :</p>   
+
+                  </div>
+                  <div class="dote">
+                    <i class="fa-regular fa-circle"></i>
+                    <p>Chef d'équipe Maintenance générale</p> 
+
+                  </div>
+                </div>
+                
+                <div class="group_container_section">
+                  
+                  <h3 class="tiltle_section_main" >ETS NETTOYAGE</h3>
+                  <div class="main_dates">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <p class="date" >12/1998 -10/1999 :</p>    
+
+                  </div>
+                  <div class="dote">
+                    <i class="fa-regular fa-circle"></i>
+                    <p>Manutentionnaire au BHV de Créteil soleil,hôtel de ville,Belle Epine</p> 
+
+                  </div>
+                  <div class="dote">
+                    <i class="fa-regular fa-circle"></i>
+                    <p>Agent de démolition</p>
+                    
+                  </div>
+                  
+              </div>
+                
+                <div class="group_container_section">
+                  <h3 class="tiltle_section_main" >BON MARCHER (PARIS )</h3>
+                  <div class="main_dates">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <p class="date" >06/1998-07/1998 :</p>     
+
+                  </div>
+                  <div class="dote">
+                    
+                    <i class="fa-regular fa-circle"></i>
+                    <p>Préparateur de commande</p> 
+                  </div>
+                </div>
+                
+                <div class="group_container_section">
+                  
+                  <h3  class="tiltle_section_main" >AUTOMATIQUE SERVICE</h3>
+                  <div class="main_dates">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <p class="date" >03/1997-05/1997:</p>     
+                    
+                  </div>
+                  <div class="dote">
+                    <i class="fa-regular fa-circle"></i>
+                    <p>Agent de Maintenance (Stagiaire) </p>  
+                    
+                  </div>
+                  <div class="dote">
+                    <i class="fa-regular fa-circle"></i>
+                    <p>PLESSIS BOUCHARD</p>  
+                    
+                  </div>
+                </div>
+                
+              </section>
+              <div class="group_main_i">
           <i class="fa-sharp fa-solid fa-graduation-cap"></i>
-          <p class="formation center main_tiltle">Formation</p>
+          <h3 class="formation center main_tiltle">Formation</h3>
         </div>
         <p class="formation border_line center main_tiltle"></p>
         <section class="container_paragraf height">
           <div class="group_container_section">
-            <h3 class="tiltle_section_main" >BAC PRO (niveau)</h3>
-            <p>1996 -97</p> 
-            <p>Maintenance des système Mécaniques Automatisées de production</p> 
-            <p>louis armand  Eaubonne,France.</p> 
+            
+            
+            <h3 class="tiltle_section_main">ANAFI, (Osny)</h3>
+            <div class="main_dates">
+              <i class="fa-regular fa-calendar-days"></i> 
+              <p class="date">2016:</p>   
+              
+            </div> 
+            <div class="dote">
+              <i class="fa-regular fa-circle"></i>
+              <p>FORMATION PRÉALABLE OPÉRATEUR CHANTIER AMIANTE - Bâtiment second oeuvre</p>
 
-          </div>
-          <div class="group_container_section">
-
-            <h3 class="tiltle_section_main">CAP,BEP  (MSMA) </h3>     
-            <p>1994-96 Paris ,France.</p> 
-            <p>Maintenance des systèmes mécaniques et automatisées de production</p> 
-            <p>louis armand  Eaubonne,France.</p> 
-
+            </div>
           </div>
           
+          
+          <div class="group_container_section">
+            <h3 class="tiltle_section_main" >BAC PRO (niveau)</h3>
+            <div class="main_dates">
+              <i class="fa-regular fa-calendar-days"></i>
+              <pc class="date" >1996 -97</pc> 
+              
+            </div>
+            <div class="dote">
+              <i class="fa-regular fa-circle"></i>
+              <p>Maintenance des système Mécaniques Automatisées de production</p> 
+              
+            </div>
+            <div class="dote">
+              <i class="fa-regular fa-circle"></i>
+              <p>louis armand  Eaubonne,France.</p> 
+              
+            </div>
+            
+          </div>
+          <div class="group_container_section">
+            
+            <h3 class="tiltle_section_main">CAP,BEP  (MSMA) </h3>
+            <div class="main_dates">
+              <i class="fa-regular fa-calendar-days"></i>    
+              <p class="date">1994-96 </p> 
+            </div> 
+            <!-- <p>Paris ,France.</p>  -->
+            <div class="dote">
+              <i class="fa-regular fa-circle"></i>
+              <p>Maintenance des systèmes mécaniques et automatisées de production</p> 
+              
+            </div>
+            <div class="dote">
+              <i class="fa-regular fa-circle"></i>
+              <p>louis armand  Eaubonne,France.</p> 
 
+            </div>
+
+          </div>
         </section>
         <p class="formation center main_tiltle"></p>
         <section class="container_paragraf height"></section>
         <div class="group_competence">
           <div class="group_main_i">
             <i class="fa-solid fa-gears"></i>
-
-            <p class="reference center main_tiltle">Références</p>
+            
+            <h3 class="reference center main_tiltle">Références</h3>
           </div>
           <p class="reference border_line center main_tiltle"></p>
         </div>
         <section class="container_paragraf height"></section>
-        <p>Mes références sont disponibles sur demande</p>
-
+        <div class="dote">
+          <i class="fa-regular fa-circle"></i>
+          <p>Mes références sont disponibles sur demande</p>
+          
+        </div>
+        
         <section class="quality_interets height">
           <div class="quality">
             <div class="group_main_i">
@@ -444,75 +669,99 @@
               <h3 class="tiltle_section_main center">Qualités</h3>
             </div>
             <h3 class="tiltle_section_main border_line center"></h3>
+            <div class="group_span">
+              <span class="dote">
+                <i class="fa-regular fa-circle-dot"></i>
+                <p>XXXXXXXXXXXXX</p>
+              </span>
+              <span class="dote">
+                <i class="fa-regular fa-circle-dot"></i>
+                <p>XXXXXXXXXXXXX</p>
+              </span>
+              <span class="dote">
+                <i class="fa-regular fa-circle-dot"></i>
+                <p>XXXXXXXXXXXXX</p>
+              </span>
+              <span class="dote">
+                <i class="fa-regular fa-circle-dot"></i>
+                <p>XXXXXXXXXXXXX</p>
+              </span>
 
-            <span class="dote">
-              <i class="fa-regular fa-circle-dot"></i>
-              <p>XXXXXXXXXXXXX</p>
-            </span>
-            <span class="dote">
-              <i class="fa-regular fa-circle-dot"></i>
-              <p>XXXXXXXXXXXXX</p>
-            </span>
-            <span class="dote">
-              <i class="fa-regular fa-circle-dot"></i>
-              <p>XXXXXXXXXXXXX</p>
-            </span>
-            <span class="dote">
-              <i class="fa-regular fa-circle-dot"></i>
-              <p>XXXXXXXXXXXXX</p>
-            </span>
+            </div>
           </div>
           <div class="interet">
             <div class="group_main_i">
               <i class="fa-sharp fa-solid fa-user-tie"></i>
-                <h3 class="tiltle_section_main  center">Centres d'intérêts</h3>
+              <h3 class="tiltle_section_main  center">Centres d'intérêts</h3>
+
               </h3>
             </div>
             <h3 class="tiltle_section_main border_line center"></h3>
-            <span class="dote">
-              <i class="fa-regular fa-circle-dot"></i>
-              <h4>MAO</h4>
-              <p>(Musique assistée par ordinateur)</p>
-            </span>
-            <span class="dote">
-              <i class="fa-regular fa-circle-dot"></i>
-              <h4>Ingénieur du son</h4>
-              <p>(Cubase)</p>
-              <p>()</p>
-            </span>
-            <span class="dote">
-              <i class="fa-regular fa-circle-dot"></i>
-              <h4>Montage vidéo</h4>
-              <p>(Adobe première pro),</p>
-              <p>(Davinci resolve)</p>
-            </span>
-            <span class="dote">
-              <i class="fa-regular fa-circle-dot"></i>
-              <h4>Modélisation,</h4>
-              <p>(Blender)</p>
+            <div class="group_span">
+              <span class="dote">
+                <i class="fa-regular fa-circle-dot"></i>
+                <h4><a href="#explicat"> MAO (*) ,</a> </h4>
+                <p>(FrutyLoops,Reason,)</p>
+              </span>
+              <span class="dote">
+                <i class="fa-regular fa-circle-dot"></i>
+                <h4>Ingénieur du son , </h4>
+                <p>(ProTools),</p>
+                <p>(Cubase)</p>
+                
+              </span>
+              <span class="dote">
+                <i class="fa-regular fa-circle-dot"></i>
+                <h4><a href="#explicat"> M-V (*) </a> </h4>
+                <p>(Première pro,Davinci resolve)</p>
+             
+              </span>
+              <span class="dote">
+                <i class="fa-regular fa-circle-dot"></i>
+                <h4>Modélisation , </h4>
+                <p>(Blender)</p>
+                
+              </span>
+              <span class="dote">
+                <i class="fa-regular fa-circle-dot"></i>
+                <h4>Animations , </h4>
+                <p>(Unity) ,</p>
+                <p>(Unreal Engine)</p>
+              </span>
+              <span class="dote">
+                <i class="fa-regular fa-circle-dot"></i>
+                <h4>Fx-vidéo , </h4>
+                <p>(After effect)</p>
+              </span>
+              <span class="dote">
+                <i class="fa-regular fa-circle-dot"></i>
+                <p>XXXXXXXXXXXXX</p>
+              </span>
               
-            </span>
-            <span class="dote">
-              <i class="fa-regular fa-circle-dot"></i>
-              <h4>Animations</h4>
-              <p>(Unity)</p>
-              <p>(Unreal Engine)</p>
-            </span>
-            <span class="dote">
-              <i class="fa-regular fa-circle-dot"></i>
-              <h4>Fx vidéo</h4>
-              <p>(After effect)</p>
-            </span>
-            <span class="dote">
-              <i class="fa-regular fa-circle-dot"></i>
-              <p>XXXXXXXXXXXXX</p>
-            </span>
+            </div>
           </div>
         </section>
       </main>
     </section>
     <footer>
-     
+      <div id="haut-de-page">
+        <a href="#haut_de_page">
+          <p>Haut de Page</p>
+
+        </a>
+      </div>
+      <div class="container_footer_go_contact">
+        <span class="go_contact">
+          <i class="fa-regular fa-arrow-up"></i>
+          <a class="contact_ancre" href="#contact">Me Contacter</a>
+        </span>
+        <span id="explicat" >
+        
+          <p>  ( * ) M-V  = " Montage Vidéo "</p>
+          <p>  ( * ) MAO  = " Musique Assistée par Ordinateur"</p>
+          
+        </span>
+      </div>
     </footer>
   </body>
 </html>
