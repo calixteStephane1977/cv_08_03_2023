@@ -56,38 +56,17 @@ h5,h3,.techno p,i ,p{
 .dote{ 
     
  
-
-    width: 0;
-    overflow:hidden;
-    text-overflow: clip;
-    animation:widthAll 8s  ease forwards;
-    flex-wrap: wrap;
-    transform-origin:right ;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* overflow:hidden; */
+    /* text-overflow: clip; */
+    /* animation:widthAll 8s  ease forwards; */
+    /* flex-wrap: wrap; */
+    /* transform-origin:right ; */
 }  
-@keyframes widthAll {
-    0%{
-        transform-origin: right;
-        
-        width: 3%;
-        overflow: hidden;
-
-      
-        
-    }
 
 
-    
-    100%{
-        text-overflow: ellipsis;
-        flex-wrap: nowrap;
-        transform-origin: right;
-     
-        width: 100%;
-        
-
-        
-    }
-}  
 
 
 
@@ -507,10 +486,82 @@ section.container_paragraf.height {
     
 }
 .group_arrow_right {
+    overflow: visible;
+    /* visibility: hidden; */
+    position: relative;
+    width: 100%;
+    /* border:1px solid ; */
+    transform-origin: right;
     display: flex;
     align-items: center;
     margin-bottom: 17px;
+    z-index: -3;
 }
+.group_arrow_right::before {
+    position: absolute;
+    overflow: hidden;
+    content: "";
+    height: 100%;
+    /* border: 1px solid; */
+    width: 100%;
+
+    /* background: #e3f4f99e; */
+    transform-origin: right;
+    background: #ecf8fb;
+    z-index: 13;
+    animation:replace 5s 0.8s forwards ;
+}
+.dote_p {
+    overflow: hidden;
+    /* visibility: hidden; */
+    position: relative;
+    width: 100%;
+    display: flex;
+    transform-origin:right ;
+    align-items: center;
+    margin-bottom: 17px;
+    z-index: -3;
+}
+.dote_p::before {
+    position: absolute;
+    overflow: hidden;
+    content: "";
+    height: 100%;
+    /* border: 1px solid; */
+    width: 100%;
+
+    /* background: #e3f4f99e; */
+    transform-origin: right;
+    background: #ecf8fb;
+    z-index: 13;
+    animation:replace 5s 0.8s forwards ;
+}
+@keyframes replace {
+    0%{
+        width: 100%; 
+        z-index: 13;
+        overflow: visible;  
+    }
+    100%{
+        z-index: 13;
+        width:0%;
+        overflow: visible;
+          
+    }
+
+}
+@media (max-width:780px) {
+    
+    .group_arrow_right::before {
+        background: white;
+        
+    }
+    .dote_p{
+        background: white;
+
+    }
+}
+
 .group_main_i {
     display: flex;
     justify-content: center;
@@ -540,10 +591,10 @@ section.container_paragraf.height {
     width: 50%;
     margin-bottom: 80px;
 }
-.dote{
+/* .dote{
     display: flex;
     align-items: center;
-}
+} */
 .dote a{
  color: black;
 }
