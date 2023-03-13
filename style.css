@@ -53,7 +53,7 @@ h5,h3,.techno p,i ,p{
     text-shadow: 4px 3px 3px grey;
 }
 
-.dote,h3{ 
+.dote{ 
     
  
 
@@ -70,7 +70,7 @@ h5,h3,.techno p,i ,p{
         
         width: 3%;
         overflow: hidden;
-        /* transform: translate( -50px); */
+
       
         
     }
@@ -87,7 +87,7 @@ h5,h3,.techno p,i ,p{
 
         
     }
-} 
+}  
 
 
 
@@ -402,6 +402,7 @@ font-size: 14px;
     width: 80%;
     border-radius: 20px;
 }
+/* ================================PROGRESSS BAR=================================================== */
 .anglais_progress_bar{
     /* border: 1px solid white; */
     background: #c05e2d;
@@ -469,6 +470,8 @@ p{
     margin: 20px 0px 129px 0px;
     font-size: 1.4em;
 }
+
+/* ==============================================ANIMATION CSS============================ */
 section.container_paragraf.height {
     display: flex;
     flex-direction: column;
@@ -494,6 +497,7 @@ section.container_paragraf.height {
     margin: 30px 0;
     
 }
+/* ======================================================================================== */
 @media (max-width:500px) {
     .tiltle_section_main{
    
@@ -652,7 +656,7 @@ background: white;
 }
 
 .border_line{
-            /* margin-top: 15px; */
+            
             margin: 0 auto;
             width: 350px;
             border-bottom: 4px solid #c05e2d;
