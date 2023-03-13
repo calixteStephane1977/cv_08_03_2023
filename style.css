@@ -451,7 +451,7 @@ p{
 }
 
 /* ==============================================ANIMATION CSS============================ */
-section.container_paragraf.height {
+section.container_paragraf.height,h4.date {
     display: flex;
     flex-direction: column;
     /* border: 1px solid; */
