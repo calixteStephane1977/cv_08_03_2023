@@ -25,6 +25,19 @@
        
     </header> -->
     <section id="haut_de_page" class="container">
+      <div class="menu">
+          <div class="liens">
+            <a href="#competencesFonctionnel">Compétences fonctionnelles</a>
+            <a href="#contact">Contact</a>
+            <a href="#competencesFonctionnel">Contact</a>
+
+            <a href="#experiencesPro">Experiences Professionnelle</a>
+            <a href="#formation">Formation</a>
+            <a href="#references">Références</a>
+            <a href="#centreInterets">Centres d'interêts</a>
+            <a href="#techno">TECHNOLIES</a>
+          </div>  
+      </div>
       <aside>
         <div class="container_img_fieldset_contact">
           <div class="container_img"></div>
@@ -48,11 +61,12 @@
           </fieldset>
 
         </div>
-        <fieldset class="fieldset_logiciel">
+        <!-- ===============================TECHNO======================================== -->
+        <fieldset id="techno" class="fieldset_logiciel">
           <h5 class="title_aside_logiciel fontSize">Technologies</h5>
           <div class="group_fieldset_logiciel">
             <div class="group_logiciel">
-              <div class="techno">
+              <div id="techno" class="techno">
                 <i class="fa-brands fa-html5"></i>
                 <p>HTML</p>
               </div>
@@ -243,6 +257,7 @@
             </div>
           </div>
         </fieldset>
+        <!-- ================================================================================== -->
         <fieldset class="fieldset_language">
           <h5 class="title_aside_language fontSize">Langues</h5>
           <div class="group_fieldset_language">
@@ -282,7 +297,7 @@
               </div>
               <div class="group_label_input">
                 <label class="label_form_entreprise" for="technologie">
-                  <p class="center">Technologie recherché</p>
+                  <p id="techno" class="center">Technologie recherché</p>
                 </label>
                 <input id="technologie" class="center" type="text" name="technologie" />
               </div>
@@ -352,7 +367,7 @@
          </div>
         <p class="profil border_line center main_tiltle"></p>
         <section class="container_paragraf height">
-          <h3 class="tiltle_section_main" >
+          <h3 id="competencesFonctionnel" class="tiltle_section_main" >
             COMPETENCES FONCTIONNELLES:
           </h3> 
           <div class="group_arrow_right">
@@ -374,7 +389,7 @@
         </section>
         <div class="group_main_i">
           <i class="fa-sharp fa-solid fa-user-tie"></i>
-          <h3 class="experience center main_tiltle">
+          <h3  id="experiencesPro" class="experience center main_tiltle">
             Expérience Professionnelle
           </h3>
         </div>
@@ -589,7 +604,7 @@
               </section>
               <div class="group_main_i">
           <i class="fa-sharp fa-solid fa-graduation-cap"></i>
-          <h3 class="formation center main_tiltle">Formation</h3>
+          <h3 id="formation" class="formation center main_tiltle">Formation</h3>
         </div>
         <p class="formation border_line center main_tiltle"></p>
         <section class="container_paragraf height">
@@ -672,7 +687,7 @@
             <div class="group_main_i">
               <i class="fa-sharp fa-solid fa-user-tie"></i>
 
-              <h3 class="tiltle_section_main center">Qualités</h3>
+              <h3 id="qualite" class="tiltle_section_main center">Qualités</h3>
             </div>
             <h3 class="tiltle_section_main border_line center"></h3>
             <div class="group_span">
@@ -698,7 +713,7 @@
           <div class="interet">
             <div class="group_main_i">
               <i class="fa-sharp fa-solid fa-user-tie"></i>
-              <h3 class="tiltle_section_main  center">Centres d'intérêts</h3>
+              <h3 id="centreInterets" class="tiltle_section_main  center">Centres d'intérêts</h3>
 
               </h3>
             </div>
@@ -751,7 +766,7 @@
     </section>
     <footer>
       <div id="haut-de-page">
-        <a href="#haut_de_page">
+        <a class="hautPage" href="#haut_de_page">
           <p>Haut de Page</p>
 
         </a>

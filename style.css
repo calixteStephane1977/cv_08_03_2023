@@ -67,9 +67,50 @@ h5,h3,.techno p,i ,p{
 }  
 
 
+@media (max-width:780px) {
+    
+    .menu{
 
+       
+        left: 400pxcd;
+       
+        }
+    
+}
 
+.menu{
+background: black;
+   
+    width: 15%;
+    height: 44%;
+    /* z-index: 0; */
+    width: 30;
+    /* display: flex; */
+    position: fixed;
+    left: -150px;
+    border-radius: 0px 0px 30px 0px;
+    z-index: 23;
+    cursor: pointer;
+   
+    z-index: 1;
+    transition:all 0.6s ;
+    }
+        .liens {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .liens a {
+        color: black;
+          text-align: end;text-overflow: ellipsis;
+        }
 
+.menu:hover{
+    background: white;
+  
+    left: 0px;
+
+}
 
 
 /* ====================================================DATES================================== */
@@ -180,7 +221,7 @@ span.phone ,span.email,.group_town_countrie {
 }
 i{
     margin-right: 15px;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 .container_img_fieldset_contact {
         width: 75%;
@@ -298,12 +339,22 @@ fieldset.fieldset_contact {
     display: flex;
     justify-content: center;
 }
+form {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+}
 input{
-    margin: 15px;
-    height: 20px;
-    border:1px solid #c05e2d;
-    border-radius: 5px;
-    background: rgb(242, 240, 240);
+       
+        height: 31px;
+        border: none;
+        /* border: 1px solid #c05e2d; */
+        border-radius: 5px;
+        width: 100%;
+        background: rgb(242, 240, 240);
+        box-shadow: -3px 3px 20px 2px #c05e2d;
     
 }
 textarea{
@@ -518,10 +569,12 @@ section.container_paragraf.height,h4.date {
     width: 100%;
     display: flex;
     transform-origin:right ;
+    /* background: #ecf8fb; */
     align-items: center;
     margin-bottom: 17px;
     z-index: -3;
 }
+
 .dote_p::before {
     position: absolute;
     overflow: hidden;
@@ -532,7 +585,7 @@ section.container_paragraf.height,h4.date {
 
     /* background: #e3f4f99e; */
     transform-origin: right;
-    background: #ecf8fb;
+    background:#ecf8fb;
     z-index: 13;
     animation:replace 5s 0.8s forwards ;
 }
@@ -560,6 +613,7 @@ section.container_paragraf.height,h4.date {
         background: white;
 
     }
+    
 }
 
 .group_main_i {
@@ -684,12 +738,15 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid white;
+        /* border: 1px solid white; */
         width: 121px;
         height: 30px;
         border-radius: 3px;
         text-align: center;
         text-decoration: none;
+        background: white;
+        border: none;
+        box-shadow: 1px 1px 32px 4px #c95a34;
 }
 i.fa-solid.fa-up-long{
     margin: 0 auto;
