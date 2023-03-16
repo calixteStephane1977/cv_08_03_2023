@@ -793,20 +793,8 @@ div#haut-de-page {
     border: none;
     margin: 0;
 }
-div#haut-de-page {
-    position: absolute;
-    /* height: 47px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    top: 29px;
-    left: 50%;
-    border: none;
-    margin: 0;
-}
-div#haut-de-page :hover {
 
+div#haut-de-page :hover {
     transform: scale(0.9);
     box-shadow: 1px 1px 32px 4px #c95a34;
 
@@ -833,10 +821,11 @@ div#haut-de-page a{
     color: white;
     /* background: white; */
     border-radius: 40px;
+    background: none;
     width: 140%;
     height: 35px;
     margin: 0;
-    box-shadow: 1px 1px 32px 4px #c95a34;
+    /* box-shadow: 1px 1px 32px 4px #c95a34; */
     /* transform: scale(0.9); */
     cursor: pointer;
 
@@ -856,6 +845,7 @@ div#haut-de-page a{
     }
     
 }
+
 .container_footer_go_contact{
         display: flex;
             height: 100%;

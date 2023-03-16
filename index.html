@@ -28,22 +28,23 @@
       <div class="menu">
         <div class="liens">
           
-            <a href="#competencesFonctionnel">Compétences fonctionnelles</a>
-            <a href="#contact">Contact </a>
-            <a href="#competencesFonctionnel">Contact</a>
-            
+          <a href="#formation">Formation</a>
+          <a href="#competencesFonctionnel">Compétences fonctionnelles</a>
+          <a href="#contact">Me Contacter </a>
+          <a href="#techno">Mes Technologies</a>
+          <a href="#competencesFonctionnel">Mes Coordonnées</a>
+          
             <a href="#experiencesPro">Experiences Professionnelle</a>
-            <a href="#formation">Formation</a>
             <a href="#references">Références</a>
             <a href="#centreInterets">Centres d'interêts</a>
-            <a href="#techno">TECHNOLIES</a>
           </div>  
           <i class="fa-solid fa-angles-left"></i>
         </div>
       <aside>
         <div class="container_img_fieldset_contact">
           <div class="container_img"></div>
-  
+  <!-- ==================================Mon contact==================================================== -->
+  <!-- ======================================================================================================== -->
           <fieldset class="fieldset_contact">
             <h5 class="title_aside_contact center fontSize">Contact</h5>
             <div class="group_fieldset_contact">
@@ -259,7 +260,7 @@
             </div>
           </div>
         </fieldset>
-        <!-- ================================================================================== -->
+        <!-- ========================================LANGUES========================================== -->
         <fieldset class="fieldset_language">
           <h5 class="title_aside_language fontSize">Langues</h5>
           <div class="group_fieldset_language">
@@ -289,6 +290,7 @@
             <i class="fa-solid fa-handshake"></i>
            <p class="center">Me Contacter</p> 
           </h5>
+      <!-- ================================FORMULAIRE=================================================     -->
           <div class="group_fieldset_entreprise">
             <form action="cv.php" method="post">
               <div class="group_label_input">
@@ -347,6 +349,20 @@
                                     Ajoutez vos commentaires
                                 </textarea
                 >
+              </div>
+              <div class="group_label_input">
+                <label class="label_form_entreprise" for="upload">
+                  <p class="center">Uploadez des fichiers</p>
+                </label>
+                <input
+                  class="center"
+                  id="Uploadez"
+                  type="file"
+                  accept=".doc,idocx,xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessgml.document"
+                  name="upload"
+                  
+                />
+                
               </div>
               <input class="button_form" type="submit" value="envoyer" />
             </form>
